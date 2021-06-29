@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux';
-import { loginUser, userSelector, clearState } from './UserSlice';
+//import { loginUser, userSelector, clearState } from './UserSlice';
 import toast from 'react-hot-toast';
 import { useHistory } from 'react-router-dom';
 

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+import Login from './features/Login';
+import Signup from './features/Signup';
 
 class App extends Component {
 
@@ -31,6 +35,12 @@ class App extends Component {
         <div className="api-test">
           {this.state.response}
         </div>
+        <Router>
+        <Switch>
+          <Route exact component={Login} path="/login" />
+          <Route exact component={Signup} path="/signup" />
+        </Switch>
+      </Router>
       </div>
     );
   }
